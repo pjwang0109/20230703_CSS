@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07</title>
+    <!-- icon 連結 -->
+    <link rel="shortcut icon" href="" />
+    <link rel="bookmark" href="" />
+    
+    <!-- CSS 連結 -->
+    <link rel="stylesheet" href="">
+    <style>
+        .mv{
+            width: 560px;
+            position: relative;
+        }
+
+        /* 插入圖片當作 iframe 的 div */
+        .mv img{
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+        .mv iframe{
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top:0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="mv">
+        <!-- 插入圖片當作 iframe 的 div -->
+        <img src="https://picsum.photos/560/315/?random=10">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3yiN7J_kH2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</body>
+<script src=""></script>
+</html>

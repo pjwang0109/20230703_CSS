@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 MV 等比例區塊</title>
+    <!-- icon 連結 -->
+    <link rel="shortcut icon" href="" />
+    <link rel="bookmark" href="" />
+    
+    <!-- CSS 連結 -->
+    <link rel="stylesheet" href="">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .mv{
+            width: 90%;
+            position: relative;
+            border: 1px solid blue;
+        }
+        /* 做一個 mv 的區塊 */
+        .mv::after{
+            content: '';
+            display: block;
+            width: 100%; /* 由父層撐開 算出影片原本的長 560px */ 
+            padding-bottom: 56.25%; /* 由父層撐開 算出影片原本的寬 315px */
+            background-color: #f00;
+        }
+
+        .mv iframe{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="mv">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3yiN7J_kH2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</body>
+<script src=""></script>
+</html>

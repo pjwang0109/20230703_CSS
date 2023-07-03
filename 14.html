@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 transition</title>
+    <!-- icon 連結 -->
+    <link rel="shortcut icon" href="" />
+    <link rel="bookmark" href="" />
+    
+    <!-- CSS 連結 -->
+    <link rel="stylesheet" href="">
+    <style>
+        .card{
+            width: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        .card img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .card .txt{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding: 20px;
+            background-color: #0008;
+            color: #fff;
+            font-size: 2em;
+            /* transform:  scale(0); */
+            /* opacity: 0; */
+            transform: translateX(-100%);
+            transition: 1s;
+        }
+        .card:hover .txt{
+                /* transform: scale(1); */
+                /* opacity: 1; */
+                transform: translateX(0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://picsum.photos/300/200/?random=10">
+        <div class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est similique nihil corporis </div>
+    </div>
+</body>
+<script src=""></script>
+</html>

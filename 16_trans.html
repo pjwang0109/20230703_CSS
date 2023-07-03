@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>16</title>
+    <!-- icon 連結 -->
+    <link rel="shortcut icon" href="" />
+    <link rel="bookmark" href="" />
+
+    <!-- CSS 連結 -->
+    <link rel="stylesheet" href="" />
+    <style>
+      .bell {
+        width: 100px;
+        margin: 100px;
+        border: 1px solid red;
+        position: relative;
+        animation: rotate1 0.2s alternate infinite,
+          top-btm 1s alternate infinite;
+      }
+      .bell img {
+        width: 100%;
+        vertical-align: top;
+      }
+      @keyframes rotate1 {
+        0% {
+          transform: rotate(-30deg);
+        }
+        100% {
+          transform: rotate(30deg);
+        }
+      }
+      @keyframes top-btm {
+        0% {
+          top: 0px;
+        }
+        100% {
+          top: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bell">
+      <img src="./bell.png" />
+    </div>
+  </body>
+  <script src=""></script>
+</html>
